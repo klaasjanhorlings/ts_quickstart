@@ -1,0 +1,35 @@
+{
+	"name": "array-methods",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@types/jest": "^24.0.11",
+		"jest": "^24.7.1",
+		"jest-summary-reporter": "^0.0.2",
+		"ts-jest": "^24.0.2",
+		"typescript": "^3.4.3"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		],
+		"verbose": true,
+		"reporters": [
+			"default",
+			["jest-summary-reporter", { "failuresOnly": false }]
+		]
+	}
+}
